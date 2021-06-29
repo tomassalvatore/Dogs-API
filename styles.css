@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  background-color: lightsalmon;
+  padding: 25px;
+}
+
+h1 {
+  display: inline;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.5rem;
+}
+
+.doggos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+select {
+  font-size: 1.5rem;
+  font-family: 'Courier New', Courier, monospace;
+  text-transform: capitalize;
+}
+
+.spinner {
+  font-size: 50px;
+  text-align: center;
+  animation: 2s spin linear infinite;
+  display: none;
+}
+
+@keyframes spin {
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+.dog-img {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+
